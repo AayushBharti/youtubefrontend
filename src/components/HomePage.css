@@ -138,26 +138,31 @@
 .channel{
     width: 100%;
     height: 33px;
-    background-color: rgb(173, 26, 199);
+    /* background-color: rgb(236, 198, 243); */
 
 }
 .title{
     width: 100%;
     height: 33px;
-    background-color: rgb(24, 227, 159);
+   
+    /* background-color: rgb(24, 227, 159); */
+    
     display: flex;
 
 }
 .chLogo{
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   border-radius: 100%;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url("D:\Aayush bharti\DOCUMENTS\Profile picture.png");
+  background-position: center;
+  background-size: cover;
 }
 .views{
     width: 100%;
     height: 33px;
-    background-color: rgb(194, 24, 24);
+    /* background-color: rgb(194, 24, 24); */
 }
 
 

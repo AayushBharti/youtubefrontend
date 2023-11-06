@@ -10,10 +10,10 @@ const VideoComponent = ()=>{
              </div>
             <div className="title">
                 <div className="chLogo"></div>
-                <div className="tile"></div>
+                <div className="tile">Hey Aayush here</div>
              </div>
-            <div className="channel"> </div>
-            <div className="views"> </div>
+            <div className="channel">Aayush Bharti</div>
+            <div className="views"> 1 Billion views</div>
         </div>
     );
 };

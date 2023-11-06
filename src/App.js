@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
 
@@ -12,7 +12,12 @@ function App() {
     // <TableComponent></TableComponent>
     // <TableComponent></TableComponent>
     // </div>
-
+  
+    
+      
+      
+     
+ 
     
     <BrowserRouter>
       <Routes>
@@ -21,6 +26,7 @@ function App() {
         {/* <Route path='/helo' element={<SomeComponent/>}></Route>
         <Route path='/hook' element={<HookComponent/>}></Route>
         <Route path='/timeBomb' element={<TimeBomb/>}></Route> */}
+        <Route path="/videopage" element={<VideoPage/>}></Route>
       </Routes>
 
     </BrowserRouter>

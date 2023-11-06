@@ -15,8 +15,8 @@ const Header = ()=>{
           </button>
         </div>
         <div className="youtube-header__profile">
-          <img src="https://via.placeholder.com/48" alt="User Profile" />
-          <span>Username</span>
+          <img src="https://via.placeholder.com/48" alt="User Profile" />  
+          <span>Aayush</span>
         </div>
       </div>
     //     <div className="nav">
@@ -38,6 +38,4 @@ const Header = ()=>{
 
 
 export default Header;
-
-
 
