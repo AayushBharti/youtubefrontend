@@ -1,0 +1,149 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 150px;
+  margin: 5px;
+}
+
+.search {
+  width: 450px;
+
+  margin: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+.signin {
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.logoimage {
+  height: 60px;
+}
+
+.sidebar {
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarItem {
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+}
+
+.videos {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.thumbnail {
+  flex: 5;
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.titlewrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.channelphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.title {
+  flex: 1;
+  margin: 2px;
+}
+
+.channel {
+  flex: 1;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.views {
+  flex: 1;
+}
+
+.searchInput {
+  background-color: rgb(240, 238, 238);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 1px solid rgb(176, 175, 175);
+  flex: 4;
+  padding-left: 15px;
+}
+
+.searchButton {
+  width: 150px;
+  flex: 1;
+  border: 1px solid rgb(176, 175, 175);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 5px;
+}
+
+.signInButton {
+  width: 80%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.channelImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}

@@ -1,36 +1,19 @@
-// import logo from './logo.svg';
-import './App.css';
-import {Routes, Route, BrowserRouter} from 'react-router-dom'
-
-import HomePage from './components/HomePage';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import VideoComponent from "./components/VideoComponent";
+import HomeComponent from "./components/HomeComponent";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import LoginComponent from "./components/LoginComponent";
 
 function App() {
   return (
-    // <div className="App">Hello
-    // <TableComponent></TableComponent>
-    // <TableComponent></TableComponent>
-    // <TableComponent></TableComponent>
-    // <TableComponent></TableComponent>
-    // </div>
-  
-    
-      
-      
-     
- 
-    
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<HomePage/>}></Route>
-        {/* <Route path='/video' element={<VideoPage/>}></Route> */}
-        {/* <Route path='/helo' element={<SomeComponent/>}></Route>
-        <Route path='/hook' element={<HookComponent/>}></Route>
-        <Route path='/timeBomb' element={<TimeBomb/>}></Route> */}
-        <Route path="/videopage" element={<VideoPage/>}></Route>
+        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/video/:id" element={<VideoComponent />}></Route>
+        <Route path="/login" element={<LoginComponent />}></Route>
       </Routes>
-
     </BrowserRouter>
-
   );
 }
 
