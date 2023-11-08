@@ -89,16 +89,16 @@
 
 .wrapper{
   background-image: url(back.jpg);
-  background-attachment: fixed;
-  background-position: center;
+  /* background-attachment: fixed; */
+  /* background-position: center; */
 }
 
 .videos {
   flex: 1;
   background-color: rgba(0, 0, 0, 0.044);
-  /* background-image: url(back.jpg);
+  background-image: url(back.jpg);
   background-attachment: fixed;
-  background-position: center; */
+  background-position: center;
   /* background-size: cover; */
   /* filter: blur(10px); */
   /* background-size: cover; */
