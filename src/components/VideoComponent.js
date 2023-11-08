@@ -45,7 +45,7 @@ const VideoPage = () => {
               />
               <div className="channelInfo">
                 <div>{video.channel}</div>
-                <div>2.3M Subscribers</div>
+                <div>10M Subscribers</div>
               </div>
               <button className="channelButton">Subscribe</button>
             </div>

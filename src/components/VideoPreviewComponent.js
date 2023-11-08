@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import aayush from './a.png'
 function VideoPreviewComponent(props) {
   const title = props.title;
   const description = props.description;
@@ -18,9 +19,10 @@ function VideoPreviewComponent(props) {
         <div className="channelphoto">
           <img
             alt="channelImage"
-            src={
-              "https://yt3.ggpht.com/dxED1O-r5cRS73JBlUk4VS3pZHDfiHcuRjRbFMcf6KgYhxP4NUlD7x0h4TR1XTXkl-JGjTPTYQ=s68-c-k-c0x00ffffff-no-rj"
-            }
+            // src={
+            //   "https://yt3.ggpht.com/dxED1O-r5cRS73JBlUk4VS3pZHDfiHcuRjRbFMcf6KgYhxP4NUlD7x0h4TR1XTXkl-JGjTPTYQ=s68-c-k-c0x00ffffff-no-rj"
+            // }
+            src={aayush}
             className="channelImage"
           />
         </div>

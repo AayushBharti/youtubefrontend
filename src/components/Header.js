@@ -1,6 +1,11 @@
 import logo from "./youtubelogo.jpg";
 
 const HeaderComponent = () => {
+
+  function onSignIN(){
+    window.location.href = "./login";
+  }
+
   return (
     <div className="header">
       <div className="logo">
@@ -11,7 +16,7 @@ const HeaderComponent = () => {
         <button className="searchButton">Search</button>
       </div>
       <div className="signin">
-        <button className="signInButton">SignIn</button>
+        <button className="signInButton" onClick={onSignIN}>Sign In</button>
       </div>
     </div>
   );

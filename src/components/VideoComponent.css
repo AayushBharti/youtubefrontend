@@ -23,7 +23,7 @@
 .iframe {
     width: 100%;
     aspect-ratio: 16/9;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 .title-video {
@@ -55,7 +55,7 @@
 }
 
 .suggestion-image>img {
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 .video-info>p {
@@ -99,11 +99,11 @@
     padding: 10px;
     height: 40px;
     background-color: rgb(0, 0, 0);
-    border: 1px solid grey;
+    border: 1px solid rgb(246, 188, 188);
     margin: 5px;
     border-radius: 20px;
     margin-left: 10px;
-    color: white;
+    color: rgb(250, 174, 174);
 }
 
 .channelButtonLite {

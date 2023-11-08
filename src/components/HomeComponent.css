@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -10,10 +16,12 @@
   display: flex;
   flex-direction: row;
   border: 1px solid black;
+  backdrop-filter: blur(25px);
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: rgba(11, 11, 11, 0.045);
   justify-content: space-between;
+  box-shadow: 0px 0px 50px black;
 }
 
 .main {
@@ -28,12 +36,15 @@
 }
 
 .search {
-  width: 450px;
-
+  width: 650px;
+  height: 40px;
+  
   margin: 6px;
   display: flex;
   flex-direction: row;
 }
+
+
 
 .signin {
   width: 150px;
@@ -47,25 +58,52 @@
 
 .sidebar {
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid rgb(30, 30, 30);
+  /* background-color: rgba(11, 11, 11, 0.484); */
+  backdrop-filter: blur(15px);
+  color: white;
   display: flex;
   flex-direction: column;
+  /* position: fixed; */
 }
 
 .sidebarItem {
-  height: 40px;
+  height: 50px;
   vertical-align: middle;
   text-align: center;
-  background-color: rgba(128, 128, 128, 0.08);
+  background-color: rgba(212, 13, 13, 0.266);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1px;
+  transition: 0.3s;
+}
+
+.sidebarItem:hover{
+  transform: scale(1.05);
+  background-color: rgba(249, 46, 46, 0.655);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  color: white;
+  
+}
+
+.wrapper{
+  background-image: url(back.jpg);
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .videos {
   flex: 1;
+  background-color: rgba(0, 0, 0, 0.044);
+  /* background-image: url(back.jpg);
+  background-attachment: fixed;
+  background-position: center; */
+  /* background-size: cover; */
+  /* filter: blur(10px); */
+  /* background-size: cover; */
   display: flex;
+  
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -75,20 +113,34 @@
   height: 300px;
   margin: 15px;
   display: flex;
+  border-radius: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.video:hover{
+  box-shadow: 0px 0px 100px rgb(224, 7, 79);
 }
 
 .thumbnail {
   flex: 5;
+  /* border-radius: 16px; */
 }
 
 .thumbnailImage {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 14px;
+  transition: 0.5s;
+}
+
+.thumbnailImage:hover{
+  transform: scale(1.03);
+  box-shadow: 0px 0px 100px palevioletred;
 }
 
 .titlewrapper {
@@ -106,6 +158,8 @@
 .title {
   flex: 1;
   margin: 2px;
+  color: white;
+  
 }
 
 .channel {
@@ -118,29 +172,67 @@
   flex: 1;
 }
 
+#aayush{
+  text-wrap: wrap;
+  background-color: rgb(182, 119, 240);
+  box-shadow: 0px 0px 25px purple;
+}
+
+#aayush:hover{
+ background-color: rgb(151, 59, 237);
+ color: rgb(255, 255, 255);
+ box-shadow: 0px 0px 50px purple;
+
+}
+
 .searchInput {
-  background-color: rgb(240, 238, 238);
+  background-color: rgba(246, 142, 142, 0.101);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  border: 1px solid rgb(176, 175, 175);
+  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+  
+  border: 1px solid rgb(168, 11, 11);
+
   flex: 4;
   padding-left: 15px;
 }
 
+
 .searchButton {
   width: 150px;
   flex: 1;
+  color: aliceblue;
+  background-color: rgb(205, 42, 94);
   border: 1px solid rgb(176, 175, 175);
+  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 5px;
 }
 
+.searchButton:hover{
+  box-shadow: 0px 0px 25px rgb(204, 8, 208);
+}
+
 .signInButton {
   width: 80%;
-  height: 100%;
+  border-color: rgb(204, 9, 139);
+  border-width: 3px;
+  background-color: rgb(205, 42, 94);
+  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+
+  color: aliceblue;
+  transition: 0.5s;
+  height: 80%;
   border-radius: 30px;
 }
+.signInButton:hover {
+  box-shadow: 0px 0px 50px rgb(204, 8, 208);
+  /* text-shadow: 0px 0px 25px rgb(204, 8, 208); */
+}
+
+
 
 .channelImage {
   width: 100%;
