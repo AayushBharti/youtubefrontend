@@ -9,14 +9,16 @@ const HeaderComponent = () => {
   return (
     <div className="header">
       <div className="logo">
+      <div className="lines"> </div>
         <img className="logoimage" src={logo} />
       </div>
       <div className="search">
-        <input type="text" className="searchInput" />
+        <input type="text" className="searchInput" placeholder="Search"/>
         <button className="searchButton">Search</button>
+        <div className="mic">  </div>
       </div>
       <div className="signin">
-        <button className="signInButton" onClick={onSignIN}>Sign In</button>
+        <button className="signInButton" onClick={onSignIN}></button>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 .wrapper {
@@ -20,7 +21,7 @@
   backdrop-filter: blur(25px);
   position: sticky;
   top: 0;
-  background-color: rgba(11, 11, 11, 0.045);
+  background-color: rgb(11, 11, 11);
   justify-content: space-between;
   box-shadow: 0px 0px 50px black;
 }
@@ -30,10 +31,18 @@
   display: flex;
   flex-direction: row;
 }
+.lines{
+  width: 40px;
 
+}
 .logo {
-  width: 150px;
+  width: 120px;
+  height: 40px;
   margin: 5px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+
 }
 
 .search {
@@ -43,6 +52,8 @@
   margin: 6px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
+
 }
 
 
@@ -51,10 +62,14 @@
   width: 150px;
   padding: 5px;
   margin: 5px;
+  cursor: pointer;
+
 }
 
 .logoimage {
-  height: 60px;
+  height: 55px;
+  cursor: pointer;
+
 }
 
 .sidebar {
@@ -69,27 +84,108 @@
 }
 
 .sidebarItem {
-  height: 50px;
+  text-align: left;
+  height: 40px;
   vertical-align: middle;
   text-align: center;
-  background-color: rgba(212, 13, 13, 0.266);
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  transition: 0.3s;
+  border-radius: 12px;
+  margin: 5px;
+  cursor: pointer;
+
+}
+.empty {
+  height: 50px;
+  background-image: url("./line.jpg");
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.266);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1px;
   transition: 0.3s;
 }
+.you {
+  height: 250px;
+  background-image: url("./you.jpg");
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.subs {
+  height: 350px;
+  margin-top: 30px;
+  background-image: url("./subs.jpg");
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+.mic{
+  background-image: url("./mic.jpg");
+  margin-left: 5px;
+  height: 45px;
+  cursor: pointer;
+  width: 55px;
+  background-position: center;
+  background-size: cover;
+
+}
+.home{
+  height: 120px;
+  vertical-align: middle;
+  background-size: cover;
+
+  background-image: url("./home.jpg");
+  text-align: center;
+  /* background-color: rgb(48, 48, 48); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  transition: 0.3s;
+  border-radius: 12px;
+  margin: 5px;
+  cursor: pointer;
+
+}
 
 .sidebarItem:hover{
-  transform: scale(1.05);
-  background-color: rgba(249, 46, 46, 0.655);
+  transform: scale(1.03);
+  background-color: rgb(48, 48, 48);
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
   color: white;
+  cursor: pointer;
+
   
 }
 
 .wrapper{
-  background-image: url(back.jpg);
+  /* background-image: url(back.jpg); */
+  background-color: black;
   /* background-attachment: fixed; */
   /* background-position: center; */
 }
@@ -97,9 +193,10 @@
 .videos {
   flex: 1;
   background-color: rgba(0, 0, 0, 0.044);
-  background-image: url(back.jpg);
-  background-attachment: fixed;
-  background-position: center;
+  /* background-image: url(back.jpg); */
+  background-color: black;
+  /* background-attachment: fixed;
+  background-position: center; */
   /* background-size: cover; */
   /* filter: blur(10px); */
   /* background-size: cover; */
@@ -107,6 +204,7 @@
   
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 .video {
@@ -121,10 +219,13 @@
   overflow-y: hidden;
   overflow-x: hidden;
   transition: 0.5s;
+  cursor: pointer;
+
 }
 
 .video:hover{
-  box-shadow: 0px 0px 100px rgb(224, 7, 79);
+  /* box-shadow: 0px 0px 100px rgb(87, 2, 30); */
+  background-color: rgba(128, 128, 128, 0.353);
 }
 
 .thumbnail {
@@ -140,8 +241,8 @@
 }
 
 .thumbnailImage:hover{
-  transform: scale(1.03);
-  box-shadow: 0px 0px 100px palevioletred;
+  /* transform: scale(1.03); */
+  /* box-shadow: 0px 0px 100px palevioletred; */
 }
 
 .titlewrapper {
@@ -154,12 +255,16 @@
   width: 60px;
   height: 60px;
   border-radius: 30px;
+  cursor: pointer;
+
 }
 
 .title {
   flex: 1;
   margin: 2px;
   color: white;
+  cursor: pointer;
+
   
 }
 
@@ -167,6 +272,8 @@
   flex: 1;
   margin: 2px;
   font-weight: bold;
+  cursor: pointer;
+
 }
 
 .views {
@@ -175,14 +282,16 @@
 
 #aayush{
   text-wrap: wrap;
-  background-color: rgb(182, 119, 240);
-  box-shadow: 0px 0px 25px purple;
+  background-color: rgb(60, 12, 104);
+  box-shadow: 0px 0px 25px rgb(81, 0, 81);
 }
 
 #aayush:hover{
  background-color: rgb(151, 59, 237);
+ transform: scale(1.05);
  color: rgb(255, 255, 255);
  box-shadow: 0px 0px 50px purple;
+ letter-spacing: 2px;
 
 }
 
@@ -190,12 +299,14 @@
   background-color: rgba(246, 142, 142, 0.101);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+  /* box-shadow: 0px 0px 25px rgb(208, 8, 108); */
   
-  border: 1px solid rgb(168, 11, 11);
+  border: 1px solid rgb(58, 55, 55);
 
   flex: 4;
   padding-left: 15px;
+  cursor: text;
+
 }
 
 
@@ -203,33 +314,44 @@
   width: 150px;
   flex: 1;
   color: aliceblue;
-  background-color: rgb(205, 42, 94);
-  border: 1px solid rgb(176, 175, 175);
-  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+  background-color: rgb(58, 55, 55);
+  border: 1px solid rgb(58, 55, 55);
+  box-shadow: 0px 0px 25px rgb(47, 0, 24);
 
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 5px;
+  cursor: pointer;
+  
+
 }
 
 .searchButton:hover{
-  box-shadow: 0px 0px 25px rgb(204, 8, 208);
+  box-shadow: 0px 0px 25px rgb(208, 8, 68);
 }
 
 .signInButton {
-  width: 80%;
-  border-color: rgb(204, 9, 139);
+  /* width: 80%; */
+  height: 50px;
+  width: 150px;
+  background-image: url("./sign.jpg");
+  background-position: center;
+  background-size: cover;
+  border-color: rgba(71, 71, 71, 0);
   border-width: 3px;
-  background-color: rgb(205, 42, 94);
-  box-shadow: 0px 0px 25px rgb(208, 8, 108);
+  /* background-color:  rgb(71, 71, 71); */
+  color: black;
+  /* box-shadow: 0px 0px 25px rgb(208, 8, 108); */
 
   color: aliceblue;
   transition: 0.5s;
-  height: 80%;
+  /* height: 80%; */
   border-radius: 30px;
+  cursor: pointer;
 }
+
 .signInButton:hover {
-  box-shadow: 0px 0px 50px rgb(204, 8, 208);
+  /* box-shadow: 0px 0px 50px rgb(204, 8, 208); */
   /* text-shadow: 0px 0px 25px rgb(204, 8, 208); */
 }
 
@@ -239,4 +361,6 @@
   width: 100%;
   height: 100%;
   border-radius: 100px;
+  cursor: pointer;
+
 }
