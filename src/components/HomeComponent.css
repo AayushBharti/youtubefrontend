@@ -24,6 +24,7 @@
   background-color: rgb(11, 11, 11);
   justify-content: space-between;
   box-shadow: 0px 0px 50px black;
+  /* z-index: 2; */
 }
 
 .main {
@@ -53,10 +54,7 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-
 }
-
-
 
 .signin {
   width: 150px;
@@ -167,7 +165,7 @@
   justify-content: center;
   margin: 1px;
   transition: 0.3s;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   margin: 5px;
   cursor: pointer;
 
@@ -224,8 +222,9 @@
 }
 
 .video:hover{
-  /* box-shadow: 0px 0px 100px rgb(87, 2, 30); */
-  background-color: rgba(128, 128, 128, 0.353);
+  box-shadow: 0px 0px 100px rgb(170, 2, 58);
+  /* background-color: rgba(128, 128, 128, 0.353);
+   */
 }
 
 .thumbnail {

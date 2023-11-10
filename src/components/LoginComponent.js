@@ -1,46 +1,36 @@
+import HeaderComponent from "./Header";
 import "./LoginComponent.css";
 
 function LoginComponent() {
-  return (
-    <div className="loginform">
-      <form>
-        <div className="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div className="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <div className="form-group form-check">
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
-    </div>
+  return ( 
+
+    <div className="login-container">
+    
+    <h2>Login</h2>
+    <form className="login-form" >
+      <label htmlFor="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        // value={username}
+        // onChange={(e) => setUsername(e.target.value)}
+        required
+      />
+
+      <label htmlFor="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        // value={password}
+        // onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
   );
 }
 
